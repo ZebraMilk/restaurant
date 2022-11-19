@@ -1,4 +1,5 @@
 const path = require("path");
+const json5 = require("json5");
 
 module.exports = {
     entry: "./src/index.js",
