@@ -1,5 +1,14 @@
+@font-face {
+    font-family: "ComicNeue";
+    src: url('./ComicNeueAngular-Regular.woff2') format('woff2'),
+        url('./ComicNeueAngular-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 body {
-    font-family: "Comic Neue Angular";
+    font-family: "ComicNeue";
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -21,6 +30,7 @@ body {
 }
 
 #nav-menu {
+    
     border: 1px solid orange;
     display: flex;
     width: 400px;
