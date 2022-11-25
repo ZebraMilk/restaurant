@@ -1,4 +1,4 @@
-export const loadInitialHeader = () => {
+export default loadInitialHeader = () => {
 
     const header = document.createElement("header");
     const content = document.getElementById("content");
