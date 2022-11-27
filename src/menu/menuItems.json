@@ -4,19 +4,19 @@
             "name": "Bumbo",
             "price": "5 silver",
             "description": "Sword Coast spice mix, Chultian dark rum, limes from the Greenhouse Arcana in Silverymoon, and sugar-free sweet from prestidigitation nation.",
-            "imageSource": "drink001.png"
+            "imageSource": "src/menu/assets/drink001.png"
         },
         {
             "name": "Knee of Bee",
             "price": "3 silver",
             "description": "In-house free-range apiary honey, local organic herb-infused neutral spirit, cruelty-free lemon juice",
-            "imageSource": "drink001.png"
+            "imageSource": "src/menu/assets/drink001.png"
         },
         {
             "name": "Old Fashioned",
             "price": "1 gold",
             "description": "Proprietary blend of Waterdhavian whiskey, Agave Spirit imported from Darkhold, a bitters from the Apothecary of Candlekeep",
-            "imageSource": "drink001.png"
+            "imageSource": "src/menu/assets/drink001.png"
         }
     ],
     "food": [
@@ -24,19 +24,19 @@
             "name": "Bumbo",
             "price": "5 silver",
             "description": "Sword Coast spice mix, Chultian dark rum, limes from the Greenhouse Arcana in Silverymoon, and sugar-free sweet from prestidigitation nation.",
-            "imageSource": "food001.png"
+            "imageSource": "src/menu/assets/food001.png"
         },
         {
             "name": "Bumbo",
             "price": "5 silver",
             "description": "Sword Coast spice mix, Chultian dark rum, limes from the Greenhouse Arcana in Silverymoon, and sugar-free sweet from prestidigitation nation.",
-            "imageSource": "food001.png"
+            "imageSource": "src/menu/assets/food001.png"
         },
         {
             "name": "Bumbo",
             "price": "5 silver",
             "description": "Sword Coast spice mix, Chultian dark rum, limes from the Greenhouse Arcana in Silverymoon, and sugar-free sweet from prestidigitation nation.",
-            "imageSource": "food001.png"
+            "imageSource": "src/menu/assets/food001.png"
         }
     ]
 }

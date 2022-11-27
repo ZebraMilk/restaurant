@@ -1,5 +1,5 @@
 export default loadMenu;
-import "./menuItems.json";
+import menu from "./menuItems.json" assert {type: "json"};
 
 const newCard = (menuItem) => {
 
@@ -26,8 +26,8 @@ const newCard = (menuItem) => {
     itemImage.src = `${menuItem.imageSource}`;
 
     // attach the new elements correctly
-    description.appendChild(itemName, itemDescription, itemPrice);
-    cardContainer.appendChild(description, itemImage)
+    description.append(itemName, itemDescription, itemPrice);
+    cardContainer.append(description, itemImage)
 
     // return the card for adding to the page
     return cardContainer;
@@ -36,7 +36,10 @@ const newCard = (menuItem) => {
 function loadMenu() {
     // make the menuContainer for drinks and food
     const menuContainer = document.createElement("main");
-    
+    menuContainer.id = "menu-container";
+    document.getElementById("content")
+            .appendChild(menuContainer);
+
     // make the container for the drink cards
     const drinksHeading = document.createElement("h2")
     drinksHeading.classList.add("menu-type");
@@ -47,9 +50,9 @@ function loadMenu() {
     menuContainer.appendChild(drinksHeading);
 
     //iterate over the first element in our menuItems JSON file, the drinks part
-    for (item in menuItems[0]) {
+    menu.drinks.forEach((item) => {
         menuContainer.appendChild(newCard(item));
-    }
+    });
 
     // make the next heading and add it to 
     const foodHeading = document.createElement("h2");
@@ -59,16 +62,10 @@ function loadMenu() {
     
     menuContainer.appendChild(foodHeading);
 
-    for (item in menuItems[1]) {
+    // make cards for the food items 
+    menu.food.forEach((item) => {
         menuContainer.appendChild(newCard(item));
-    }
-
-    // make a drink card
-
-
-    // make the container for the food cards
-
-    // make a food card
+    });
 
     console.log("Menu Loaded");
-}
+};
