@@ -1,0 +1,42 @@
+{
+    "drinks": [
+        {
+            "name": "Bumbo",
+            "price": "5 silver",
+            "description": "Sword Coast spice mix, Chultian dark rum, limes from the Greenhouse Arcana in Silverymoon, and sugar-free sweet from prestidigitation nation.",
+            "imageSource": "Bumbo"
+        },
+        {
+            "name": "Knee of Bee",
+            "price": "3 silver",
+            "description": "In-house free-range apiary honey, local organic herb-infused neutral spirit, cruelty-free lemon juice",
+            "imageSource": "KneeofBee"
+        },
+        {
+            "name": "Old Fashioned",
+            "price": "6 silver",
+            "description": "Proprietary blend of Waterdhavian whiskey, Agave Spirit imported from Darkhold, a bitters from the Apothecary of Candlekeep",
+            "imageSource": "OldFashioned"
+        }
+    ],
+    "food": [
+        {
+            "name": "Dragon Egg Benedict",
+            "price": "2 gold",
+            "description": "Poached Dragon Egg*, Luskandaise, choice of sourdough or flapjills. <br> *Not real dragon egg...",
+            "imageSource": "DragonEggBenedict"
+        },
+        {
+            "name": "Crock of Beef",
+            "price": "9 silver",
+            "description": "Braised beef, savory stock, barrel-aged salt.",
+            "imageSource": "CrockofBeef"
+        },
+        {
+            "name": "Basilisk Fillet",
+            "price": "5 gold",
+            "description": "Chef's specialty, only the choicest cut of Basilisk tail steak. Cooked rare, no exceptions.",
+            "imageSource": "BasiliskFillet"
+        }
+    ]
+}

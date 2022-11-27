@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "ComicNeue";
+    src: url('./ComicNeueAngular-Regular.woff2') format('woff2'),
+        url('./ComicNeueAngular-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "ComicNeue";
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+#content {
+
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nav-container {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-menu {
+    border: 1px solid orange;
+    display: flex;
+    width: 400px;
+    height: 4rem;
+    justify-content: space-between;
+}
+
+.nav-opt {
+    border: 1px solid pink;
+    padding: 0 1em;
+    text-align: center;
+
+}
+
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.menu-type {
+    align-self: center;
+}
+
+.card {
+    background-color: rgb(48, 48, 48);
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+    width: auto;
+}
+.card {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+}
+
+.description {
+    max-width: 50%;
+}
+
+.item-image {
+    max-height: 400px;
+    justify-self: right;
+    border-radius: 10px;
+}
+
+.light {
+    background-color: aliceblue;
+    color: black;
+}
