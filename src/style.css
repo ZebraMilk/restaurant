@@ -29,8 +29,17 @@ body {
     flex-direction: column;
 }
 
+#nav-container {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 #nav-menu {
-    
     border: 1px solid orange;
     display: flex;
     width: 400px;
@@ -61,6 +70,25 @@ body {
     border: 2px solid red;
     display: flex;
     width: auto;
+}
+.card {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+}
+
+.description {
+    max-width: 50%;
+}
+
+.item-image {
+    max-height: 400px;
+    justify-self: right;
 }
 
 .light {
