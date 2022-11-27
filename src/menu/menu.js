@@ -1,5 +1,7 @@
 export default loadMenu;
 import menu from "./menuItems.json" assert {type: "json"};
+import drink001 from "./assets/drink001.png";
+import food001 from "./assets/food001.png"
 
 const newCard = (menuItem) => {
 
@@ -9,7 +11,7 @@ const newCard = (menuItem) => {
     const itemName = document.createElement("h4");
     const itemDescription = document.createElement("p");
     const itemPrice = document.createElement("h4");
-    const itemImage = document.createElement("img");
+    const itemImage = new Image();
 
     // Add classes to all the new dom objects
     cardContainer.classList.add("card");
@@ -23,7 +25,7 @@ const newCard = (menuItem) => {
     itemName.innerText = `${menuItem.name}`;
     itemPrice.innerText = `${menuItem.price}`;
     itemDescription.innerText = `${menuItem.description}`;
-    itemImage.src = `${menuItem.imageSource}`;
+    itemImage.src = drink001;
 
     // attach the new elements correctly
     description.append(itemName, itemDescription, itemPrice);
