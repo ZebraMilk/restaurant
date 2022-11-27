@@ -19,5 +19,4 @@ const navOptions = document.getElementsByClassName("nav-opt");
 // load the home page 
 loadPage("home");
 
-
 console.log("it works, thus far");
