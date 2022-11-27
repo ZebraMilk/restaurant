@@ -1,10 +1,7 @@
 import "./style.css";
 import { loadInitialHeader, clearPage, loadPage } from "./load.js";
-// import loadMenu from "./menu/menu.js";
 
-
-
-// always load the nav menu on page load
+// always load the nav menu on initial load
 loadInitialHeader();
 
 // grab all the nav options to add listeners
@@ -21,11 +18,6 @@ const navOptions = document.getElementsByClassName("nav-opt");
 
 // load the home page 
 loadPage("home");
-// make a clear page button to test clearing the page except for the nav menu
-// const btn = document.createElement("button");
-// btn.innerText = "clear page";
 
-// const nav = document.getElementById("nav-menu");
-// nav.appendChild(btn).addEventListener("click", clearPage);
 
 console.log("it works, thus far");
