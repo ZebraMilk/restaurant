@@ -25,11 +25,10 @@ const newCard = (menuItem) => {
     itemName.innerText = `${menuItem.name}`;
     itemPrice.innerText = `${menuItem.price}`;
     itemDescription.innerText = `${menuItem.description}`;
-    if (menuItem.imageSource === "drink001") {
-        itemImage.src = drink001;
-    } else {
-        itemImage.src = food001;
-    }
+
+    // have to do this better, inside this function...
+    itemImage.src = drink001;
+
     // attach the new elements correctly
     description.append(itemName, itemDescription, itemPrice);
     cardContainer.append(description, itemImage)

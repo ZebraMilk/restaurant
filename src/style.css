@@ -65,9 +65,11 @@ body {
 }
 
 .card {
+    background-color: rgb(48, 48, 48);
     margin: 2rem 0;
     padding: 1rem;
     border: 2px solid red;
+    border-radius: 10px;
     display: flex;
     width: auto;
 }
@@ -89,6 +91,7 @@ body {
 .item-image {
     max-height: 400px;
     justify-self: right;
+    border-radius: 10px;
 }
 
 .light {
