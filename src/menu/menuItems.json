@@ -33,10 +33,16 @@
             "imageSource": "CrockofBeef"
         },
         {
-            "name": "Basilisk Fillet",
+            "name": "Basilisk Filet",
             "price": "5 gold",
             "description": "Chef's specialty, only the choicest cut of Basilisk tail steak. Cooked rare, no exceptions.",
-            "imageSource": "BasiliskFillet"
+            "imageSource": "BasiliskFilet"
+        },
+        {
+            "name": "Elven Hard-tack",
+            "price": "10 gold",
+            "description": "You pay for the intellectual property as well as the hearty nourishment offered by these delicious cakes. Serves 12.",
+            "imageSource": "Lembas"
         }
     ]
 }

@@ -13,10 +13,10 @@ const navOptions = document.getElementsByClassName("nav-opt");
         clearPage();
         console.log(nav);
         loadPage(nav);
-    })
+    });
 });
 
-// load the home page 
+// load the home page on load/refresh
 loadPage("home");
 
 console.log("it works, thus far");
