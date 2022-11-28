@@ -1,7 +1,18 @@
 export default loadMenu;
 import menu from "./menuItems.json" assert {type: "json"};
-import drink001 from "./assets/drink001.png";
-import food001 from "./assets/food001.png";
+
+// function to import all images from the assets folder
+function loadAllImages(required) {
+    let images = {};
+    console.log(required);
+    required.keys().map((item) => {
+        images[item.replace("./", "")] = required(item);
+    });
+    return images;
+};
+
+// loads the images with their associated urls at compile time
+const menuImages = loadAllImages(require.context("./assets", false, /\.(png|jpe?g|svg)$/));
 
 const newCard = (menuItem) => {
 
@@ -27,7 +38,7 @@ const newCard = (menuItem) => {
     itemDescription.innerText = `${menuItem.description}`;
 
     // have to do this better, inside this function...
-    itemImage.src = drink001;
+    itemImage.src = menuImages[`${menuItem.imageSource}.png`];
 
     // attach the new elements correctly
     description.append(itemName, itemDescription, itemPrice);
