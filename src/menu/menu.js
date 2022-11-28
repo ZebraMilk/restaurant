@@ -4,7 +4,6 @@ import menu from "./menuItems.json" assert {type: "json"};
 // function to import all images from the assets folder
 function loadAllImages(required) {
     let images = {};
-    console.log(required);
     required.keys().map((item) => {
         images[item.replace("./", "")] = required(item);
     });
@@ -37,7 +36,7 @@ const newCard = (menuItem) => {
     itemPrice.innerText = `${menuItem.price}`;
     itemDescription.innerText = `${menuItem.description}`;
 
-    // have to do this better, inside this function...
+    // use the value associated with the image name key 
     itemImage.src = menuImages[`${menuItem.imageSource}.png`];
 
     // attach the new elements correctly
