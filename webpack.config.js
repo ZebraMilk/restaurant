@@ -1,5 +1,6 @@
 const path = require("path");
 const json5 = require("json5");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: "./src/index.js",
@@ -10,6 +11,7 @@ module.exports = {
     },
     module: {
         rules: [
+
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
@@ -35,4 +37,13 @@ module.exports = {
             },
         ],
     },
+    plugins: [
+      new HtmlWebpackPlugin({
+        hash: true,
+        title: "Fancy Fishwork",
+        content: "content",
+        template: './src/index.html',
+        filename: './dist/index.html'
+      })
+    ]
 };
