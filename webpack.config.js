@@ -1,10 +1,10 @@
 const path = require("path");
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development", //production
   entry: {
-    main: path.resolve(__dirname, "src/index.js")
+    main: path.resolve(__dirname, "src/index.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -14,11 +14,20 @@ module.exports = {
   //loaders
   module: {
     rules: [
-      // css loader, order is important here
-      {test: /\.css$/i, use: ['style-loader', 'css-loader']}
-    ]
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+    ],
   },
-
 
   //plugins
   plugins: [
@@ -26,7 +35,6 @@ module.exports = {
       title: "The Listing Lich",
       filename: "index.html",
       template: path.resolve(__dirname, "src/template.html"),
-
-    })
+    }),
   ],
-}
+};
