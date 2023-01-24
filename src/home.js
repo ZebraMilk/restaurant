@@ -1,4 +1,11 @@
-export default function loadHome() {
+export default loadHome;
+import lichIcon from "./listing-lich-external.png";
+
+
+
+
+
+function loadHome() {
   const content = document.getElementById("content");
   const home = document.createElement("h1");
   home.innerText = "HOME";
@@ -8,7 +15,7 @@ export default function loadHome() {
   const homeImage = document.createElement("img");
   const homeDetails = document.createElement("p");
   homeDetails.innerText = "Here is the description of the tavern."
-  homeImage.src = "./src/icon.jpg";
+  homeImage.src = lichIcon;
   homeBody.appendChild(homeImage);
   homeBody.appendChild(homeDetails);
 
