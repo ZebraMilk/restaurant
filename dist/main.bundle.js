@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadHome)\n/* harmony export */ });\nfunction loadHome() {\n    const content = document.getElementById(\"content\");\n    const home = document.createElement(\"h1\")\n    home.innerText = \"HOME\";\n    content.appendChild(home);\n\n    console.log(\"Home loaded\");\n};\n\n//# sourceURL=webpack://01-restaurant/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadHome)\n/* harmony export */ });\nfunction loadHome() {\n  const content = document.getElementById(\"content\");\n  const home = document.createElement(\"h1\");\n  home.innerText = \"HOME\";\n  content.appendChild(home);\n\n  const homeBody = document.createElement(\"section\");\n  const homeImage = document.createElement(\"img\");\n  const homeDetails = document.createElement(\"p\");\n  homeDetails.innerText = \"Here is the description of the tavern.\"\n  homeImage.src = \"./src/icon.jpg\";\n  homeBody.appendChild(homeImage);\n  homeBody.appendChild(homeDetails);\n\n  content.appendChild(homeBody);\n\n  console.log(\"Home loaded\");\n}\n\n\n//# sourceURL=webpack://01-restaurant/./src/home.js?");
 
 /***/ }),
 

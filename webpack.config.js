@@ -35,6 +35,7 @@ module.exports = {
       title: "The Listing Lich",
       filename: "index.html",
       template: path.resolve(__dirname, "src/template.html"),
+      inject: false,
     }),
   ],
 };
